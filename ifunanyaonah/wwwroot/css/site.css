@@ -67,12 +67,14 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 997;
     transition: all 0.5s;
     height: 80px;
-    background: rgba(25, 28, 31, 0.8);
+    background: slategrey !important;
+    width: 58.5%;
+    margin: 0 auto;
 }
-
-    #header.header-transparent {
-        background: transparent;
-    }
+/* # rgba(25, 28, 31, 0.8);*/
+#header.header-transparent {
+    background: transparent;
+}
 
     #header.header-scrolled {
         height: 60px;
@@ -87,6 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
     padding: 0;
+    width:100% !important;
+    
 }
 
     .navbar ul {
@@ -95,6 +99,10 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         list-style: none;
         align-items: center;
+        background-color: slategrey;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
     }
 
     .navbar li {

@@ -28,18 +28,18 @@ namespace Portfolio.Services
                 .Property(Send.Messages, new JArray {
                 new JObject {
                  {"From", new JObject {
-                  {"Email", "williamifunanya@gmail.com"},
-                  {"Name", "Ifunanya Onah"}
+                  {"Email", "ifunanya.onah@thebulbafrica.institute"},
+                  {"Name", "IfunanyaOnah"}
                   }},
                  {"To", new JArray {
                   new JObject {
-                   {"Email", "williamifunanya@gmail.com"},
-                   {"Name", "User"}
+                   {"Email", model.Email},
+                   {"Name", model.Name}
                    }
                   }},
                  {"Subject", model.Subject},
                  {"TextPart", "New Request From Portfolio"},
-                 {"HTMLPart", $"<h3>From : {model.Name} <br> Details: {model.phoneNumber}. <br> {model.Email} <br>  Message : {model.Message} </h3>"}
+                 {"HTMLPart", $"<h3>From : {model.Name} <br> Details: {model.Email} <br>  Message : {model.Message} </h3>"}
                  }
                 });
             MailjetResponse response = await client.PostAsync(request);

@@ -25,9 +25,9 @@ namespace ifunanyaonah
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<EmailService>();
-            services.Configure<MailJetConfig>(Configuration.GetSection("MaillJetConfiguration"));
             services.AddControllersWithViews();
+            services.AddScoped<EmailService>();
+            services.Configure<MailJetConfig>(Configuration.GetSection("MailJetConfiguration"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

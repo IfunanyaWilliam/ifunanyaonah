@@ -10,7 +10,6 @@ namespace ifunanyaonah.Models
         [Required(ErrorMessage = "Please enter your email address")]
         public string Email { get; set; }
 
-        public int phoneNumber { get; set; }
 
         [Required(ErrorMessage = "Please enter your message")]
         public string Message { get; set; }
